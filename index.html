@@ -4,47 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/syle.css">
+    <title>renewal</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-     
-        <div class="logo">
-            <img class="my-5" src="assets/img/header/logo/logo.png" alt="시밀레로고">
-        </div>
-       
-        <div class="nav mx-auto">
-            <div class="menu  p-4"> 
-                <ul class="row justify-content-center mb-0 ">
-                    <li><a href="#">BREAST PUMPS</a></li>
-                    <li><a href="#">PUMPING KIT</a></li>
-                    <li><a href="#">ACCESSORIES</a></li>
-                    <li><a href="#">NIPPLE CARE</a></li>
-                    <li><a href="#">RESOURCE</a></li>
-                    <li><a href="#">PARTNERSHIP</a></li>
-                </ul>
-            </div>
-            <div class="sub-menu">
-                <div class="menu-icon">
-                    <img src="assets/img/header/icon/global.png" alt="메뉴 아이콘">
+        <div class="inner container-fluid">
+            <div class="content mx-auto row justify-content-between align-items-center">
+                <div class="left">
+                    <p>REGISTER A PRODUCT</p>
+                </div>
+                <div class="right row justify-content-between align-items-center ">
+                    
+                    <div class="login row align-items-center">
+                        <img src="assets/image/header/icon/ico_account_gr_13x12.png" alt="로그인 아이콘" class="m-1">
+                        <a href="#">LOGIN ACCOUNT</a> 
+                    </div>
+
+                    <div class="shop row align-items-center">
+                        <img src="assets/image/header/icon/ico_cart_wt_12x12.png" alt="온라인 샵 아이콘" class="m-1">
+                        <a href="#">ONLINE SHOP</a> 
+                    </div>
                 </div>
             </div>
         </div>
-        
-    </header>
-    <div class="banner">
-        <div class="slider"></div>
-    </div>
+        <div class="gnb">
+            <div class="logo mx-auto py-5">
+                <a href="#"></a><img src="assets/image/header/logo/logo_leica.png" alt="로고이미지">
+            </div>
+            <div class="nav row mx-auto justify-content-between">
+                <ul class="menu row justify-content-between mx-auto">
+                    <li><a href="#">라이카 카메라 코리아</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">컨텐츠</a></li>
+                    <li><a href="#">아카데미</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">세컨드 핸드</a></li>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+                    <div class="menu-icon text-center">
+                        <img src="assets/image/header/icon/global.png" alt="아이콘 이미지">
+                        <ul class="language">
+                            <li><a href="#">USA</a></li>
+                            <li><a href="#">Malaysia</a></li>
+                            <li><a href="#">Korea</a></li>
+                            <li><a href="#">Australia</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <section class="main-visual">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg01"></div>
+              <div class="swiper-slide bg02"></div>
+              <div class="swiper-slide bg03"></div>
+              <div class="swiper-slide bg04"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      
+    </section>
     
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
