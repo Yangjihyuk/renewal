@@ -115,11 +115,12 @@ header{
     display: flex;
     flex-direction: column;
     background: #999;
-    transition: all 2s;
+    z-index: 99;
+    
 }
 .language li{
     border-bottom: 1px solid #fff;
-   padding: 10px;
+    padding: 10px;
 }
 .language li a:hover{
     color: #E30610;
@@ -132,5 +133,41 @@ header{
 /* main-visual */
 .main-visual{
     background: #000;
-    height: 100vh;
+
+
 }
+.main-visual .bg01{
+    width: 100%;
+    height: 780px;
+    background: url(../image/main-visual/bg01.jpg); 
+    background-position: center; 
+}
+.main-visual .bg02{
+    width: 100%;
+    height: 780px;
+    background: url(../image/main-visual/bg02.jpg);  
+    background-position: center; 
+}
+.main-visual .bg03{
+    width: 100%;
+    height: 780px;
+    background: url(../image/main-visual/bg03.jpg);  
+    background-position: center; 
+}
+.main-visual .bg04{
+    width: 100%;
+    height: 780px;
+    background: url(../image/main-visual/bg04.jpg);  
+    background-position: center; 
+}
+.main-visual .bg05{
+    width: 100%;
+    height: 780px;
+    background: url(../image/main-visual/bg05.jpg);  
+    background-position: center; 
+}
+.swiper-pagination {
+    position: relative;
+}
+
+   
