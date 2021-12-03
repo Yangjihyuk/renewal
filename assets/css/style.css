@@ -17,10 +17,12 @@ a{
 body{
     font-size: 15px;
 }
+
 /* header ==========================================*/
 header{
     background:#000;
 }
+/* inner */
 .inner{
     width: 100%;
     font-family:'Montserrat';
@@ -63,6 +65,7 @@ header{
     height: 12px;
     
 }
+/* gnb ======================================================== */
 .gnb{
     width: 100%;
     font-family: 'Noto Sans KR','Montserrat';
@@ -130,9 +133,10 @@ header{
 .language li a:hover:after{
     width: 0;
 }
-/* main slide==================================== */
+/* main slide ==================================== */
 .main-visual{
     width: 100%;
+    background: #000;
 }
 .main-slide{
     width: 100%;
@@ -165,57 +169,97 @@ header{
     background-size: cover;
     background-position:bottom ;
 }
+.main-slide{
+    margin-bottom: unset;
+}
 /* slick dots ====================================*/
-.main-slide .slick-dots{
+.main-visual .slick-dots{
     display: flex;
-    
+    margin-bottom: 0 !important;  
 } 
-
 
 /* elementor ==================================*/
 .elementor{
     background:#000 ;
+    color: #fff;
 
+}
+.ele-box a{
+    padding: unset;
 }
 .ele{
-    height: 500px;
-    
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.ele-text-box h3{
+    text-decoration: none;
+}
+.h-img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 99;
+}
+.ele img{
+    width: 100%;
 }
 
-.ele-box .ele-img01{
-    background: url(../image/elementor/ele-01.jpg)no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.ele-box .ele-img02{
-    background: url(../image/elementor/ele-02.jpg)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.ele-box .ele-img03{
-    background: url(../image/elementor/ele-03.jpg)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.ele-box .ele-img04{
-    background: url(../image/elementor/ele-04.jpg)no-repeat ;
-    background-size: cover;
-    background-position: center;
-}
-.ele-box .box-up{
-    display: flex;
-}
-.ele-box .box-down{
-    display: flex;
-}
-/* mobile-slick */
+/* ele-mobile =======================*/
 
 
+
+/* mobile-swiper ==================================*/
+.main-swiper-mobile{
+    background: #000;
+    width: 100%;
+    display: none;
+}
+.main-swiper-mobile .swiper-slide img{
+    width: 100%;
+} 
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100% !important;
+    height: 4px !important;
+    left: 0 !important;
+    top: unset;
+    bottom: px !important;
+}
+:root{
+    --swiper-theme-color:#E30610 
+}
+
+
+
+@media(max-width:1024px){
+   .main-slide{
+       display: none;
+   } 
+   .main-swiper-mobile{
+       display: block;
+   }
+}
 @media(max-width:769px){
-    .ele-box{
+    
+    .ele-box-mobile{
+        display: block;
+    }
+}
+@media(max-width:541px){
+    .shop{
         display: none;
     }
-    .ele-box-mobile{
+    .xi-bars{
+        display: block;
+    } 
+    .menu{
+        display: none;
+    }
+    .mobile-menu-icon{
         display: block;
     }
 }

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>renewal</title>
+    <!-- xeicon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
     <!-- bootstrap -->
@@ -20,7 +24,7 @@
                 <div class="left">
                     <p>REGISTER A PRODUCT</p>
                 </div>
-                <div class="right row justify-content-between align-items-center ">
+                <div class="right row justify-content-between align-items-center">
                     
                     <div class="login row align-items-center">
                         <img src="assets/image/header/icon/ico_account_gr_13x12.png" alt="로그인 아이콘" class="m-1">
@@ -40,7 +44,7 @@
             </div>
             <!-- menu ====================================== -->
             <div class="nav row mx-auto justify-content-between">
-                <ul class="menu row justify-content-between mx-auto">
+                <ul class="menu row justify-content-between align-items-center mx-auto">
                     <li><a href="#">라이카 카메라 코리아</a></li>
                     <li><a href="#">제품소개</a></li>
                     <li><a href="#">스토어</a></li>
@@ -48,17 +52,16 @@
                     <li><a href="#">아카데미</a></li>
                     <li><a href="#">고객센터</a></li>
                     <li><a href="#">세컨드 핸드</a></li>
-
-                    <div class="menu-icon text-center">
-                        <img src="assets/image/header/icon/global.png" alt="아이콘 이미지">
-                        <ul class="language">
-                            <li><a href="#">USA</a></li>
-                            <li><a href="#">Malaysia</a></li>
-                            <li><a href="#">Korea</a></li>
-                            <li><a href="#">Australia</a></li>
-                        </ul>
-                    </div>
                 </ul>
+                <div class="menu-icon text-center">
+                    <img src="assets/image/header/icon/global.png" alt="아이콘 이미지">
+                    <ul class="language">
+                        <li><a href="#">USA</a></li>
+                        <li><a href="#">Malaysia</a></li>
+                        <li><a href="#">Korea</a></li>
+                        <li><a href="#">Australia</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header> 
@@ -70,47 +73,94 @@
             <div class="main-bg03" data-title="title3"><a href="#"></a></div>
             <div class="main-bg04" data-title="title4"><a href="#"></a></div>
        </ul>
-       <div class="swiper mySwiper">
+       <!-- mobile swiper ==================================-->
+       <div class="main-swiper-mobile swiper mySwiper pb-4">
            <div class="swiper-wrapper">
-               <div class="main-m-bg01"><a href="#">
+               <div class="swiper-slide main-m-bg01">
                 <img src="assets/image/main-visual/bg01.jpg" alt="">
-               </a></div>
-               <div class="main-m-bg02"><a href="#">
+               </div>
+
+               <div class="swiper-slide main-m-bg02">
                 <img src="assets/image/main-visual/bg02.jpg" alt="">
-               </a></div>
-               <div class="main-m-bg03"><a href="#">
+               </div>
+
+               <div class="swiper-slide main-m-bg03">
                 <img src="assets/image/main-visual/bg03.jpg" alt="">
-               </a></div>
-               <div class="main-m-bg04"><a href="#">
+               </div>
+
+               <div class="swiper-slide main-m-bg04">
                 <img src="assets/image/main-visual/bg04.jpg" alt="">
-               </a></div>
+               </div>
             </div>
-            <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
        </div>
    </section>
+   <!-- ele ================================================= -->
+    <section class="elementor py-4">
+        <div class="ele-title container justify-content-center">
+            <h1>Leica serice</h1>
+        </div>
+        <div class="ele-box row col-10 mx-auto justify-content-center">
+            <a href="#" onclick = "return false" class="col-lg-5 p-2">
+                <div class="ele-img01 ele text-center">
+                    <div class="img-box01">
+                        <img src="assets/image/elementor/png/img01.png" alt="">
+                        <div class="ele-text-box">
+                            <h4>Leica Compact</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <img class="hide-img01 h-img" src="assets/image/elementor/bg01.jpg" alt="">
+                </div>
+            </a>
 
-    <section class="elementor">
-        <div class="ele-box row col-10 mx-auto">
-            <div class="ele-img01 ele col-xl-6 text-center">
-            
-            </div>
+            <a href="#" onclick = "return false" class="col-lg-5 p-2">
+                <div class="ele-img02 ele text-center ">
+                    <div class="img-box02">
+                        <img src="assets/image/elementor/png/img02.png" alt="">
+    
+                        <div class="ele-text-box">
+                            <h4>Leica Q2</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <img class="hide-img02 h-img" src="assets/image/elementor/bg02.jpg" alt="">
+                </div>
+            </a>
 
-            <div class="ele-img02 ele col-xl-6 text-center">
-            
-            </div>
+            <a href="#" onclick = "return false" class="col-lg-5 p-2">
+                <div class="ele-img03 ele text-center ">
+                    <div class="img-box03">
+                        <img src="assets/image/elementor/png/img03.png" alt="">
+    
+                        <div class="ele-text-box">
+                            <h4>Leica D-LUX7 Black</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <img class="hide-img03 p-2 h-img" src="assets/image/elementor/bg03.jpg" alt="">
+            </a>
 
-            <div class="ele-img03 ele col-xl-6 text-center">
-            
-            </div>
+            <a href="#" onclick = "return false" class="col-lg-5 p-2">
+                <div class="ele-img04 ele text-center ">
+                    <div class="img-box04">
+                        <img src="assets/image/elementor/png/img04.png" alt="">
+    
+                        <div class="ele-text-box">
+                            <h4>Leica SL2</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <img class="hide-img04 p-2 h-img" src="assets/image/elementor/bg04.jpg" alt="">
+            </a>
 
-            <div class="ele-img04 ele col-xl-6 text-center">
             
-            </div>
                     
             
         </div>
+        <!-- ele-mobile ===================================
         <div class="ele-box-mobile row col-10 mx-auto">
             <div class="ele-img01 ele col-xl-6 text-center">
             <img src="assets/image/elementor/ele-01.jpg" alt="">
@@ -127,14 +177,14 @@
             <div class="ele-img04 ele col-xl-6 text-center">
                 <img src="assets/image/elementor/ele-04.jpg" alt="">
             </div>
-                    
-            
-        </div>
+        </div> -->
     </section>
 
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
      <!-- slick -->
