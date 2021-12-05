@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>renewal</title>
+    <!-- owl slide -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!-- xeicon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- swiper -->
@@ -67,13 +70,65 @@
     </header> 
     <!-- main slide ======================================= -->
    <section class="main-visual">
-       <ul class="main-slide">
+        <div class="owl-carousel ">
+            <a class="item" href="#" onclick = "return false" data-hash="one">
+                <div class="main-bg01">
+    
+                </div>
+            </a>
+            <a class="item" href="#" onclick = "return false" data-hash="two">
+                <div class="main-bg02">
+    
+                </div>
+            </a>
+            <a href="#" onclick = "return false" data-hash="three">
+                <div class="main-bg03">
+    
+                </div>
+            </a>
+            <a href="#" onclick = "return false" data-hash="four">
+                <div class="main-bg04">
+    
+                </div>
+            </a> 
+        </div>
+        <div class="notice container">
+            <div class="notice-text">
+                
+                <p><span>공지사항</span><br>라이카 카메라의 더 많으 정보</p>
+            </div>
+        </div>
+        <!-- owl button 보류 -->
+        <!-- <div class="slide-button row container mx-auto justify-content-between">
+            <a class="button secondary url slidetabs" href="#one" onclick = "return false">
+                <div class="slide-dot-text">
+                    <p>여행은 곧 운명<br>Leica D-LUX7 Vans X Ray</p>
+                </div>
+            </a>
+            <a class="button secondary url slidetabs" href="#two" onclick = "return false">
+                <div class="slide-dot-text">
+                    <p>LEICA X HELINOX <br>Special Package Edition</p>
+                </div>
+            </a>
+            <a class="button secondary url slidetabs" href="#three" onclick = "return false">
+                <div class="slide-dot-text">
+                    <p>새로운 M10-R<br>Leica M10-R black paint finish</p>
+                </div>
+            </a>
+            <a class="button secondary url slidetabs" href="#four" onclick = "return false">
+                <div class="slide-dot-text">
+                    <p>다시 태어난 전설<br>Noctilux-M 50 f/1.2</p>
+                </div>
+            </a>
+        </div> -->
+        <!-- 슬릭 보류 -->
+       <!-- <ul class="main-slide">
             <div class="main-bg01" data-title="title1"><a href="#"></a></div>
             <div class="main-bg02" data-title="title2"><a href="#"></a></div>
             <div class="main-bg03" data-title="title3"><a href="#"></a></div>
             <div class="main-bg04" data-title="title4"><a href="#"></a></div>
-       </ul>
-       <!-- mobile swiper ==================================-->
+       </ul> -->
+       <!-- mobile swiper ================================== -->
        <div class="main-swiper-mobile swiper mySwiper pb-4">
            <div class="swiper-wrapper">
                <div class="swiper-slide main-m-bg01">
@@ -183,6 +238,8 @@
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Owl Slide -->
+    <script src="assets/js/owl.carousel.min.js"></script>
     <!-- swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- bootstrap -->

@@ -138,7 +138,7 @@ header{
     width: 100%;
     background: #000;
 }
-.main-slide{
+.owl-carousel{
     width: 100%;
 }
 .main-visual .main-bg01{
@@ -169,9 +169,10 @@ header{
     background-size: cover;
     background-position:bottom ;
 }
-.main-slide{
+.owl-carousel{
     margin-bottom: unset;
 }
+
 /* slick dots ====================================*/
 .main-visual .slick-dots{
     display: flex;
@@ -236,7 +237,7 @@ header{
 
 
 @media(max-width:1024px){
-   .main-slide{
+   .owl-carousel{
        display: none;
    } 
    .main-swiper-mobile{
