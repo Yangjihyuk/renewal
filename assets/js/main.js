@@ -1,34 +1,30 @@
-// Owl Slide
-$('.owl-carousel').owlCarousel({
-  items:1,
-  center:true,
-  margin:0,
-  mouseDrag:true,
-  autoplay:10,
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
-  URLhashListener:true,
-  autoplayHoverPause:true,
-  startPosition: 'URLHash',
+// // Owl Slide
+// $('.owl-carousel').owlCarousel({
+//   items:1,
+//   center:true,
+//   margin:0,
+//   mouseDrag:true,
+//   autoplay:10,
+//   animateOut: 'fadeOut',
+//   animateIn: 'fadeIn',
+//   URLhashListener:true,
+//   autoplayHoverPause:true,
+//   startPosition: 'URLHash',
   
-});
-
-// // main-slick-slide
-// $('.main-slide').slick({
-// slidesToShow: 1,
-// slidesToScroll: 1,
-// dots:true,
-// arrows: false,
-// fade: true,
-// autoplay:3000,
-// Infinity,
-// customPaging : function(slider, i) {
-//         var title = $(slider.$slides[i].innerHTML).find('div[data-title]').data('');
-//         return '<a class="pager__item"> '+title+' </a>';
-//     },
 // });
 
-// main-swiper-mobile
+// main-slick-slide=========================
+$('.main-slide').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+arrows: false,
+fade: true,
+autoplay:1500,
+Infinity:true,
+
+});
+
+// main-swiper-mobile===============
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -42,6 +38,7 @@ var swiper = new Swiper(".mySwiper", {
   effect:'fade',
 });
 
+// elementor=======================
 $(function(){
   $('.img-box01').click(function(){
     console
