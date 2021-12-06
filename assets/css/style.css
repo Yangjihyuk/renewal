@@ -32,6 +32,9 @@ body{
 .red{
     color: #E30610;
 }
+.gray{
+    color:#555
+}
 
 
 /* header ==========================================*/
@@ -342,7 +345,8 @@ header{
     background: #000;
 }
 .store-slide{
-    padding: 0;
+    padding-bottom: 48px;
+    margin-bottom: 0;
 }
 .slide-img{
     width: 275px;
@@ -352,7 +356,6 @@ header{
 .slide-img img{
     width: 100%;
     min-width: 200px;
-    border-radius: 5px;
 }
 .slick-prev{
     position:absolute;
@@ -394,7 +397,7 @@ color: #fff;
 .store-slide .slide-img{
     overflow: hidden; 
 }
-/* =========================================== */
+/* ==================================== */
 .container-store{
     width: 80%;
     margin: 0 auto;
@@ -429,11 +432,48 @@ color: #fff;
 
 }
 /* =============================================== */
+    .slide-img{
+        position: relative;
+        overflow: hidden;
+    }
+    .slide-img:hover .hide-text-box{
+        opacity: 1;
+    }
 
-footer{
-    background: brown;
-    height: 500px;
-}
+    .hide-text-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:rgba(3,3,3,0.6);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .5s;
+
+    }
+    .last-notice{
+        color: #fff;
+        background:#E30610 ;
+    }
+    .last-notice p{
+       margin-bottom: 0
+    }
+    footer{
+        background:#000;
+        height: auto;
+    }
+    .company-info P{
+        font-size: 12px;
+    }
+    .last-notice{
+        display: flex;
+    }
+    
+    
 @media(max-width:1024px){
     .start-content-text{
         display: none;
