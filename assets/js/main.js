@@ -12,7 +12,25 @@
 //   startPosition: 'URLHash',
   
 // });
+$(function(){
+  $('.menu-icon').mouseover(function(){
+    $('.sub').stop().slideDown();
+  });
+  $('.menu-icon').mouseout(function(){
+    $('.sub').stop().slideUp();
+  });
+})
 
+
+
+$(function(){
+  $('.menu-icon').mouseover(function(){
+    $('.box').stop().slideDown();
+  });
+  $('.menu-icon').mouseout(function(){
+    $('.box').stop().slideUp();
+  });
+})
 // main-slick-slide=========================
 $('.main-slide').slick({
 slidesToShow: 1,
@@ -90,6 +108,60 @@ $(function(){
     $('.hide-img04').fadeOut(500);
   })
 });
+
+// store-slide ==========================================
+
+$('.slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+
+
+
+$('.store-slide').slick({
+  dots: false,
+  infinite: true,
+  loop:true,
+  infinite:true,
+  autoplay:3000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1075,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+   
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+AOS.init();
 
 
   
