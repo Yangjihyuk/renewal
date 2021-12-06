@@ -472,6 +472,29 @@ color: #fff;
     .last-notice{
         display: flex;
     }
+    .util li{
+        position: relative;
+        margin-left: 20px;
+    }
+    .util li::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -10px;
+        width: 1px;
+        height: 20px;
+        background: #555;    
+    }
+    .util :last-child::after{
+        display: none;
+    }
+    .util li::after:last-child{
+        display: none;
+    }
+    .footer-container{
+        box-sizing: border-box;
+        padding: 20px;
+    }
     
     
 @media(max-width:1024px){
