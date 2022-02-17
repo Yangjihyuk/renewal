@@ -30,7 +30,7 @@ body{
     color: #fff !important;
 }
 .red{
-    color: #E30610;
+    color: #E30610 !important;
 }
 .gray{
     color:#555
@@ -338,7 +338,8 @@ header{
     z-index: 99;
 }
 .ele img{
-    width: 100%
+    width: 100%;
+    object-fit: cover;
 }
 /* store-slide =======================================*/
 .sec-store{
@@ -517,9 +518,21 @@ color: #fff;
     .logo{
         width: 40px;
     }
+    .gnb{
+        position: relative;
+    }
     .menu{
         display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
     }
+    
     .menu-icon{
         display: none;
     }
